@@ -1,0 +1,21 @@
+=== Normal operation (SNR 10 dB) ===
+Sent:     {'transformer_temp_C': 65.9, 'line_voltage_kV': 10.9, 'line_current_A': 261.3, 'battery_voltage_V': 110.5}
+Received: {'transformer_temp_C': 65.9, 'line_voltage_kV': 10.9, 'line_current_A': 261.0, 'battery_voltage_V': 110.5} | checksum OK: True
+Alarms:   none
+
+=== Fault condition (SNR 10 dB) ===
+Received: {'transformer_temp_C': 102.4, 'line_voltage_kV': 10.87, 'line_current_A': 256.0, 'battery_voltage_V': 101.8} | checksum OK: True
+Alarms:   ['HIGH transformer_temp_C = 102.4', 'LOW battery_voltage_V = 101.8']
+
+SNR (dB, full line bandwidth) vs BER:
+   -24  0.46063
+   -22  0.43125
+   -20  0.37646
+   -18  0.31604
+   -16  0.23938
+   -14  0.14688
+   -12  0.06979
+   -10  0.01688
+    -8  0.00104
+
+Saved waveforms.png and ber_vs_snr.png
